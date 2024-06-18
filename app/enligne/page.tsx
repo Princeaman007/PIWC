@@ -1,6 +1,7 @@
 
 import Head from 'next/head';
 import Navbar from "@/components/Navbar";
+import Footer from '@/components/footer';
 
 
 const Enligne = () =>{
@@ -18,7 +19,9 @@ const Enligne = () =>{
             Information about the church.
           </p>
         </main>
+        <Footer/>
       </div>
+      
     )
 }
 

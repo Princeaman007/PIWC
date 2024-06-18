@@ -22,7 +22,7 @@ export default function Navbar() {
                             <Link href="/">Accueil</Link>
                         </MenubarTrigger>
                         <MenubarTrigger className="text-gray-800 hover:text-orange-700 transition duration-300 ease-in-out">
-                            <Link href="/leglise">Vie de l'église</Link>
+                            <Link href="/leglise">Vie de l église</Link>
                         </MenubarTrigger>
                         <MenubarTrigger className="text-gray-800 hover:text-orange-700 transition duration-300 ease-in-out">
                             <Link href="/enligne">En Ligne</Link>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from 'next/head';
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/footer";
 
 
 const contact = () =>{
@@ -18,6 +19,7 @@ const contact = () =>{
             Information about the church.
           </p>
         </main>
+        <Footer/>
       </div>
     )
 }
