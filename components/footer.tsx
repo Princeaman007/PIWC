@@ -1,4 +1,7 @@
 
+import { Instagram, Youtube, Facebook, LandPlot} from "lucide-react";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -6,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
         <div>
           <h2 className="text-xl font-bold mb-4">My Church</h2>
-          <p className="mb-4">Nous sommes une communauté engagée à servir et à partager l'amour.</p>
+          <p className="mb-4">Nous sommes une communauté engagée à servir et à partager l amour.</p>
         </div>
         <div>
           <h2 className="text-xl font-bold mb-4">Nos rendez-vous</h2>
@@ -19,21 +22,28 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h2 className="text-xl font-bold mb-4">Contact & Réseaux Sociaux</h2>
+          <h2 className="text-xl font-bold mb-4">Contacts & Réseaux Sociaux</h2>
+          <div className="flex gap-1">
+          <LandPlot size={36} strokeWidth={2.25} />
           <p className="mb-4">Techenologiestraat 51-55 1082 Berchem Saint Agathe</p>
-          <div className="flex space-x-4">
-            <a href="https://www.instagram.com" aria-label="Instagram" className="hover:text-gray-400">
-              
-            </a>
-            <a href="https://www.youtube.com" aria-label="YouTube" className="hover:text-gray-400">
-            
-            </a>
-            <a href="https://www.tiktok.com" aria-label="TikTok" className="hover:text-gray-400">
-              
-            </a>
-            <a href="https://www.facebook.com" aria-label="Facebook" className="hover:text-gray-400">
-            
-            </a>
+          </div>
+          
+          <div className="flex space-x-* justify-items-center">
+              <a href="https://www.instagram.com">
+                <Button variant="link">
+                <Instagram size={36} strokeWidth={2.25} />
+                </Button>
+              </a>
+              <a href="https://www.youtube.com">
+                <Button variant="link">
+                <Youtube size={36} strokeWidth={2.25} />
+                </Button>
+              </a>
+              <a href="https://www.facebook.com">
+                <Button variant="link">
+                <Facebook size={36} strokeWidth={2.25} />
+                </Button>
+              </a>
           </div>
         </div>
       </div>

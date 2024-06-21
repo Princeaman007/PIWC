@@ -1,8 +1,9 @@
 import Hero from "./hero";
 import Nosvaleur from "./valeur";
 import OverlayText from "./international";
-import Pasteur from "./pasteur";
+import PastorProfile from "./pasteur";
 import Programs from "./programe";
+import Verset from "./verset";
 
 
 
@@ -15,7 +16,8 @@ export default function Main() {
         <Hero/>
         <Nosvaleur/>
         <OverlayText/>
-        <Pasteur/>
+        <PastorProfile/>
+        <Verset/>
         <Programs/>
 
         </div>

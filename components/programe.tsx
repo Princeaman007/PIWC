@@ -21,7 +21,7 @@ const programs = [
   },
   {
     title: 'Jeudi',
-    image: '/assets/jeudi.jpeg',
+    image: '/assets/mardi.jpeg',
     description: [
       ' Culte (diffusé en Live)',
       'De 20h à 21h',

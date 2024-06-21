@@ -14,7 +14,7 @@ export default function Navbar() {
         <header className="bg-white shadow-md sticky top-0 z-50">
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 <div className="text-xl font-bold">
-                    <Link href="/">My Church</Link>
+                    <Link href="/">PIWC BRUSSELS</Link>
                 </div>
                 <Menubar className="border-0">
                     <MenubarMenu>
