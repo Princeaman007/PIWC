@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
         <div>
-          <h2 className="text-xl font-bold mb-4">My Church</h2>
+          <h2 className="text-xl font-bold mb-4">PIWC BRUSSELS</h2>
           <p className="mb-4">Nous sommes une communauté engagée à servir et à partager l amour.</p>
         </div>
         <div>
@@ -17,7 +17,7 @@ const Footer = () => {
           <ul className="space-y-2">
             <li>1er Culte en Anglais de 10h à 13h</li>
             <li>2ème Culte en Français de 13h30 à 15h30</li>
-            <li>Mercredi : Étude biblique à 20h</li>
+            <li>Lundi : Étude biblique à 20h</li>
             <li>Jeudi : Culte en ligne à  20h</li>
           </ul>
         </div>
@@ -49,7 +49,7 @@ const Footer = () => {
       </div>
       <div className="container mx-auto text-center mt-8">
         <p className="text-sm text-gray-400">
-          My Church © 2024. Tous Droits Réservés. – Réalisé par Prince Aman
+        PIWC BRUSSELS © 2024. Tous Droits Réservés. – Réalisé par Prince Aman
         </p>
       </div>
     </footer>

@@ -31,9 +31,9 @@ const programs = [
 
 const Programs = () => {
   return (
-    <div className="flex flex-col items-center mb-9 mt-9">
+    <div className="flex flex-col items-center mb-9 mt-9 ">
       <h2 className="text-4xl font-bold mb-4">Nos Programmes</h2>
-      <p className="text-center mb-8">Les Différents Programmes au sein de l'église</p>
+      <p className="text-center mb-8">Les Différents Programmes au sein de l église</p>
       <div className="flex justify-around w-full">
         {programs.map((program, index) => (
           <div key={index} className="flex flex-col items-center">
