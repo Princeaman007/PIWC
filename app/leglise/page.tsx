@@ -3,7 +3,11 @@ import Head from 'next/head';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
 import HeroAbout from "@/components/heroAbout";
-import WhoAreWe from "@/components/whoweare";
+import CirclePhotoCollage from "@/components/nouveau";
+import PastorProfile from "@/components/pasteur";
+import ThemePastoral from "@/components/themepastoral";
+import Programs from "@/components/programe";
+import Nosvaleur from "@/components/valeur";
 
 
 const Leglise = () =>{
@@ -14,7 +18,11 @@ const Leglise = () =>{
         </Head>
         <Navbar />
         <HeroAbout/>
-        <WhoAreWe/>
+        <CirclePhotoCollage/>
+        <Nosvaleur/>
+        <ThemePastoral/>
+        <PastorProfile/>
+        <Programs/>
         <Footer/>
       </div>
     )

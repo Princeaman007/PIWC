@@ -1,59 +1,60 @@
-// components/WhoWeAre.js
+// components/PhotoCollage.js
+
 import Image from 'next/image';
 
-
-    const WhoeWeAre = () => {
+const PhotoCollage = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center bg-white p-8">
-      <div className="md:w-1/2 text-center md:text-left p-4">
-        <h2 className="text-3xl font-bold mb-4">WHO ARE WE</h2>
-        <p className="text-gray-700">
-          We are dedicated to fellowship and manifesting the Kingdom of God on earth. Our mission is to equip the church to reach out to lost souls and bring them to Christ. Together, we strive to make a positive impact and share the love and message of Jesus with the world.
-        </p>
+    <div className="flex flex-col items-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-extrabold text-gray-900 mb-6">Photo Collage</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="relative w-full h-64">
+          <Image
+            src="/assets/hero.jpeg"
+            alt="Description for image 1"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
+        </div>
+        <div className="relative w-full h-64">
+          <Image
+            src="/assets/aboute01.jpg"
+            alt="Description for image 2"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
+        </div>
+        <div className="relative h-48 w-48 md:h-96 md:w-96">
+          <Image
+            src="/assets/about02.jpeg"
+            alt="Description for image 3"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
+        </div>
+        <div className="relative w-full h-64 md:col-span-2">
+          <Image
+            src="/assets/etude.jpeg"
+            alt="Description for image 4"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
+        </div>
+        <div className="relative w-full h-64 md:col-span-1">
+          <Image
+           src="/assets/about04.jpg"
+            alt="Description for image 5"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
+        </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div className="relative w-full h-64">
-          <Image
-            src="/assets/hero.jpeg"
-            alt="Who We Are"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-
-
-        <div className="relative w-full h-64">
-          <Image
-            src="/assets/hero.jpeg"
-            alt="Who We Are"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="relative w-full h-64">
-          <Image
-            src="/assets/hero.jpeg"
-            alt="Who We Are"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="relative w-full h-64">
-          <Image
-            src="/assets/hero.jpeg"
-            alt="Who We Are"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-      </div>
-      
-    </section>
+    </div>
   );
 }
 
-export default WhoeWeAre;
+export default PhotoCollage;
