@@ -6,7 +6,7 @@ const CirclePhotoCollage = () => {
   return (
     <div className="container mx-auto p-4 flex flex-col items-center h-screen">
             <h2 className="text-3xl font-extrabold text-gray-900 mb-4 text-center">WHO ARE WE</h2>
-            <p className="text-center max-w-xl mb-16 text-gray-700">
+            <p className="text-center max-w-xl mb-28 text-gray-700">
             This is an example of a circular photo collage. You can use this layout to showcase multiple images in a visually appealing circular arrangement. Customize the images and content as per your needs.
             </p>
                 <div className="relative w-96 h-96">

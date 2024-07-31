@@ -2,6 +2,7 @@ import Link from "next/link";
 import Head from 'next/head';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
+import ContactForm from "@/components/contact";
 
 
 const contact = () =>{
@@ -12,12 +13,7 @@ const contact = () =>{
         </Head>
         <Navbar />
         <main className="pt-14 min-h-screen flex flex-col items-center justify-center bg-gray-100">
-          <h1 className="text-4xl font-bold text-center mb-8">
-            Contact
-          </h1>
-          <p className="text-center text-gray-700">
-            Information about the church.
-          </p>
+           <ContactForm/>
         </main>
         <Footer/>
       </div>

@@ -15,8 +15,8 @@ const PastorProfile = () => {
         />
       </div>
       <div className="max-w-xl text-center md:text-left self-start">
-        <h2 className="text-4xl font-bold mb-4">Pasteur Alex</h2>
-        <h3 className="text-2xl font-semibold text-purple-600 mb-4">LEADER DE LA COMMUNAUTÉ PIWC BRUSSELS.</h3>
+        <h2 className="text-4xl  font-bold mb-4">Pasteur Alex</h2>
+        <h3 className="text-2xl font-semibold text-amber-400 mb-4">LEADER DE LA COMMUNAUTÉ PIWC BRUSSELS.</h3>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto eligendi et sequi. Debitis, nesciunt vero. Placeat quis perferendis voluptates, doloremque fugit culpa sit non ipsam. Id atque rem quia molestias.
         </p>

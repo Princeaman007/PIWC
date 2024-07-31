@@ -4,7 +4,7 @@ import 'animate.css';
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen mt-42">
       <Image
         src="/assets/hero.jpeg"
         alt="Hero Image"
@@ -20,7 +20,7 @@ const Hero = () => {
         <p className="text-center text-lg md:text-2xl mb-8 animate__animated animate__fadeInUp">
           We are a community committed to serving and sharing love.
         </p>
-        <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+        <button className="bg-amber-400 hover:bg-amber-200 text-white font-bold py-2 px-4 rounded">
           <Link href="/leglise">A Propos</Link>
         </button>
       </div>

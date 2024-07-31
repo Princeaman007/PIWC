@@ -31,9 +31,6 @@ export default function Navbar() {
                         <MenubarTrigger className="text-gray-800 hover:text-orange-700 transition duration-300 ease-in-out">
                             <Link href="/contact">Contact</Link>
                         </MenubarTrigger>
-                        <MenubarTrigger className="text-gray-800 hover:text-orange-700 transition duration-300 ease-in-out">
-                            <Link href="/don">Faire un don</Link>
-                        </MenubarTrigger>
                     </MenubarMenu>
                 </Menubar>
             </div>
