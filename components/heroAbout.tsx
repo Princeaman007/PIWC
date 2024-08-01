@@ -15,10 +15,10 @@ const HeroAbout = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 animate__animated animate__fadeInDown">
-          About
+        CHURCH OF PENTECOST 
         </h1>
         <p className="text-center text-lg md:text-2xl mb-8 animate__animated animate__fadeInUp">
-        PIWC BRUSSELS.
+        Piwc Brussels.
         </p>
       </div>
     </div>

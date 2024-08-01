@@ -1,10 +1,23 @@
 // components/ContactForm.js
 "use client";
-
+import Image from 'next/image';
 import { useState } from 'react';
 import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
-const ContactForm = () => {
+const ContactForm = () => { 
+  
+  emailjs.init({
+    publicKey: 'sIb1wSw4jng-4o9eW',
+    blockHeadless: true,
+    blockList: {
+      list: [],
+    },
+    limitRate: {
+      throttle: 10000, // 10s
+    },
+  });
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -12,6 +25,14 @@ const ContactForm = () => {
     subject: '',
     message: ''
   });
+
+  const templateParams = {
+    from_firstName: formData.firstName,
+    from_lastName: formData.lastName,
+    subject: formData.subject,
+    message: formData.message,
+    from_email: formData.email
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,6 +46,33 @@ const ContactForm = () => {
     e.preventDefault();
     // Handle form submission logic here
     console.log(formData);
+
+    emailjs
+  .send('service_2359uht', 'template_ya65x67', templateParams, {
+    publicKey: 'sIb1wSw4jng-4o9eW',
+    blockList: {
+      watchVariable: 'userEmail',
+    },
+    limitRate: {
+      throttle: 0, // turn off the limit rate for these requests
+    },
+  })
+  .then(
+    (response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    },
+    (err) => {
+      console.log('FAILED...', err);
+    },
+  );
+
   };
 
   return (
