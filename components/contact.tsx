@@ -6,18 +6,6 @@ import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
 const ContactForm = () => { 
-  
-  emailjs.init({
-    publicKey: 'sIb1wSw4jng-4o9eW',
-    blockHeadless: true,
-    blockList: {
-      list: [],
-    },
-    limitRate: {
-      throttle: 10000, // 10s
-    },
-  });
-
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -25,6 +13,8 @@ const ContactForm = () => {
     subject: '',
     message: ''
   });
+
+  const [messageSent, setMessageSent] = useState(false);
 
   const templateParams = {
     from_firstName: formData.firstName,
@@ -44,39 +34,36 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
 
     emailjs
-  .send('service_2359uht', 'template_ya65x67', templateParams, {
-    publicKey: 'sIb1wSw4jng-4o9eW',
-    blockList: {
-      watchVariable: 'userEmail',
-    },
-    limitRate: {
-      throttle: 0, // turn off the limit rate for these requests
-    },
-  })
-  .then(
-    (response) => {
-      console.log('SUCCESS!', response.status, response.text);
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-    },
-    (err) => {
-      console.log('FAILED...', err);
-    },
-  );
+      .send('service_2359uht', 'template_ya65x67', templateParams, 'sIb1wSw4jng-4o9eW')
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          setMessageSent(true);
+          
+          // Send a confirmation email to the user
+          emailjs.send('service_2359uht', 'template_confirmation', {
+            to_email: formData.email,
+            to_name: `${formData.firstName} ${formData.lastName}`
+          }, 'sIb1wSw4jng-4o9eW');
 
+          setFormData({
+            firstName: '',
+            lastName: '',
+            email: '',
+            subject: '',
+            message: ''
+          });
+        },
+        (err) => {
+          console.log('FAILED...', err);
+        },
+      );
   };
 
   return (
-    <div className="bg-amber-200  min-h-screen flex items-center justify-center mb-28">
+    <div className="bg-amber-200 min-h-screen flex items-center justify-center mb-28">
       <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-4xl">
         <div className="text-center mb-8">
           <h2 className="text-4xl font-bold text-amber-400">Get In Touch</h2>
@@ -155,6 +142,11 @@ const ContactForm = () => {
             </button>
           </form>
         </div>
+        {messageSent && (
+          <div className="text-center mt-4 text-green-500 font-bold">
+            Votre message a été envoyé avec succès! Un accusé de réception a été envoyé à votre adresse email.
+          </div>
+        )}
       </div>
     </div>
   );
