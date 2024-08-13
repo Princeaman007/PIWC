@@ -24,7 +24,7 @@ const ContactForm = () => {
     from_email: formData.email
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -32,7 +32,7 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
     emailjs
