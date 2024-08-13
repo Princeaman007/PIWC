@@ -20,7 +20,7 @@ const Hero = () => {
   const width = useWidth();
   console.log(width);
   return (
-    <div className="relative md:w-full md:h-screen md:mt-42 border border-2 border-solid border-gray-950">
+    <div className="relative md:w-full md:h-screen md:mt-42">
       {width > 400 ?
         <Image
         src="/assets/hero.jpeg"

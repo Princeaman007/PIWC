@@ -12,7 +12,7 @@ export default function Main() {
    
     
     return(
-        <div className=" border border-2 border-solid border-gray-950">
+        <div>
         <Hero/>
         <Nosvaleur/>
         <OverlayText/>
