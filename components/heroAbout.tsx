@@ -1,20 +1,51 @@
+'use client'
 import Image from 'next/image';
 import Link from 'next/link';
 import 'animate.css';
+import { useEffect, useState } from 'react';
 
+const useWidth = () => {
+  const [width, setWidth] = useState(0)
+  const handleResize = () => setWidth(window.innerWidth)
+  useEffect(() => {
+      handleResize()
+      window.addEventListener('resize', handleResize)
+      return () => window.removeEventListener('resize', handleResize)
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  return width
+}
 const HeroAbout = () => {
+  const width = useWidth();
   return (
-    <div className="relative w-full h-screen">
-      <Image
+    <div className="relative md:w-full md:h-screen md:mt-42 border border-2 border-solid border-gray-950">
+      {width > 400 ?
+        <Image
         src="/assets/heroeglise.jpg"
         alt="Hero Image"
-        layout="fill"
-        objectFit="cover"
-        className="absolute inset-0 w-full h-full"
+        fill
+        object-fill
+        className="inset-0 w-full h-full"
+        //className="absolute h-fit"
+        //layout="fill"
+        //className="absolute inset-0 w-full h-full"
       />
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      :
+      <Image
+       src="/assets/heroeglise.jpg"
+        alt="Hero Image"
+        width={500}
+        height={800}
+        //style={{width: "100%", height: "50%"}}
+        objectFit="cover"
+        //className="inset-0 w-full h-full"
+        //className="absolute h-fit"
+      />
+      }
+      {/**<div className="absolute inset-0 bg-black opacity-50"></div> */}
+      {/** <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">*/}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 animate__animated animate__fadeInDown">
+        <h1 className="text-4xl text-center md:text-6xl font-bold mb-4 animate__animated animate__fadeInDown">
         CHURCH OF PENTECOST 
         </h1>
         <p className="text-center text-lg md:text-2xl mb-8 animate__animated animate__fadeInUp">

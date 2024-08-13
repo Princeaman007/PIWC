@@ -9,20 +9,20 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
         <div>
           <h2 className="text-xl font-bold mb-4">PIWC BRUSSELS</h2>
-          <p className="mb-4">Nous sommes une communauté engagée à servir et à partager l amour.</p>
+          <p className="mb-4">We are a community committed to serving and sharing love.</p>
         </div>
         <div>
-          <h2 className="text-xl font-bold mb-4">Nos rendez-vous</h2>
-          <p>Dimanche :</p>
+          <h2 className="text-xl font-bold mb-4">Our appointments</h2>
+          <p>Sunday:</p>
           <ul className="space-y-2">
-            <li>1er Culte en Anglais de 10h à 13h</li>
-            <li>2ème Culte en Français de 13h30 à 15h30</li>
-            <li>Lundi : Étude biblique à 20h</li>
-            <li>Jeudi : Culte en ligne à  20h</li>
+            <li>1st Worship in English from 10 a.m. to 1 p.m.</li>
+            <li>2nd Worship in French from 1:30 p.m. to 3:30 p.m.</li>
+            <li>Monday: Bible study at 8 p.m.</li>
+            <li>Thursday: Online worship at 8 p.m.</li>
           </ul>
         </div>
         <div>
-          <h2 className="text-xl font-bold mb-4">Contacts & Réseaux Sociaux</h2>
+          <h2 className="text-xl font-bold mb-4">Contacts & Social Networks</h2>
           <div className="flex gap-1">
           <LandPlot size={36} strokeWidth={2.25} />
           <p className="mb-4">Techenologiestraat 51-55 1082 Berchem Saint Agathe</p>
@@ -49,7 +49,7 @@ const Footer = () => {
       </div>
       <div className="container mx-auto text-center mt-8">
         <p className="text-sm text-gray-400">
-        PIWC BRUSSELS © 2024. Tous Droits Réservés. – Réalisé par Prince Aman
+        PIWC BRUSSELS © 2024. All Rights Reserved. – Directed by Prince Aman.
         </p>
       </div>
     </footer>

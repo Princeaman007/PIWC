@@ -24,13 +24,13 @@ export default function Navbar() {
                 <Menubar className="border-0 hidden md:flex">
                     <MenubarMenu>
                         <MenubarTrigger className="text-gray-800 hover:text-orange-700 transition duration-300 ease-in-out">
-                            <Link href="/">Accueil</Link>
+                            <Link href="/">Home</Link>
                         </MenubarTrigger>
                         <MenubarTrigger className="text-gray-800 hover:text-orange-700 transition duration-300 ease-in-out">
-                            <Link href="/leglise">Vie de l église</Link>
+                            <Link href="/leglise">Church</Link>
                         </MenubarTrigger>
                         <MenubarTrigger className="text-gray-800 hover:text-orange-700 transition duration-300 ease-in-out">
-                            <Link href="/enligne">En Ligne</Link>
+                            <Link href="/enligne">Online</Link>
                         </MenubarTrigger>
                         <MenubarTrigger className="text-gray-800 hover:text-orange-700 transition duration-300 ease-in-out">
                             <Link href="/contact">Contact</Link>

@@ -8,6 +8,7 @@ import PastorProfile from "@/components/pasteur";
 import ThemePastoral from "@/components/themepastoral";
 import Programs from "@/components/programe";
 import Nosvaleur from "@/components/valeur";
+import Verset from "@/components/verset";
 
 
 const Leglise = () =>{
@@ -20,10 +21,13 @@ const Leglise = () =>{
         <HeroAbout/>
         <CirclePhotoCollage/>
         <Nosvaleur/>
-        <ThemePastoral/>
+        <Verset/>
         <PastorProfile/>
         <Programs/>
         <Footer/>
+        {/**
+         * 
+         */}
       </div>
     )
 }

@@ -12,14 +12,13 @@ export default function Main() {
    
     
     return(
-        <div>
+        <div className=" border border-2 border-solid border-gray-950">
         <Hero/>
         <Nosvaleur/>
         <OverlayText/>
         <PastorProfile/>
         <Verset/>
         <Programs/>
-
         </div>
     );
 }
