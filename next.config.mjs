@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
     basePath: "/PIWC",
-    output: "export",  // <=== enables static exports
+    output: "export",
     reactStrictMode: true,
-  };
+    images: {
+        unoptimized: true,
+    },
+};
 
 export default nextConfig;
