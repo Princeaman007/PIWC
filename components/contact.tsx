@@ -71,7 +71,7 @@ const ContactForm = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">Let's Join Together!</h3>
+            <h3 className="text-2xl font-semibold">{`Let's Join Together!`}</h3>
             <p className="text-gray-600">
               <FaMapMarkerAlt className="inline-block text-amber-400 mr-2" /> Techenologiestraat 51-55 1082 Berchem Saint Agathe
             </p>
