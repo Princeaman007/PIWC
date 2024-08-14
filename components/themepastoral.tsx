@@ -7,7 +7,7 @@ const ThemePastoral= () => {
     //<div className="relative w-full h-96">
     <div className="w-full h-96">
       <Image 
-        src="/assets/verset.jpeg" 
+        src="/PIWC/assets/verset.jpeg" 
         alt="Background Image" 
         layout="fill" 
         objectFit="cover" 

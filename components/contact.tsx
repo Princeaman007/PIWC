@@ -79,9 +79,11 @@ const ContactForm = () => {
               <FaEnvelope className="inline-block text-amber-400 mr-2" /> infopiwcbrussels@gmail.com
             </p>
             <div className="hidden md:block">
-              <img 
-              src="/assets/img-contact.webp" 
+              <Image 
+              src="/PIWC/assets/img-contact.webp" 
                 alt="Person Reading"
+                width={200}
+                height={100}
                 className="object-cover opacity-75 w-3/4 mx-auto rounded"
               />
             </div>

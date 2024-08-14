@@ -7,7 +7,7 @@ const OverlayText = () => {
     //<div className="relative w-full h-96 border border-8 border-solid border-orange-500">
     <div className="relative">
       <Image 
-        src="/assets/multi.jpeg" 
+        src="/PIWC/assets/multi.jpeg" 
         alt="Background Image" 
         //layout="fill" 
         objectFit="contain" 

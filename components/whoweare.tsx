@@ -10,7 +10,7 @@ const PhotoCollage = () => {
         {/*<div className="relative w-full h-64">*/ }
         <div className="w-full h-64">
           <Image
-            src="/assets/hero.jpeg"
+            src="/PIWC/assets/hero.jpeg"
             alt="Description for image 1"
             layout="fill"
             objectFit="cover"
@@ -20,7 +20,7 @@ const PhotoCollage = () => {
         {/*<div className="relative w-full h-64">*/}
         <div className=" w-full h-64">
           <Image
-            src="/assets/aboute01.jpg"
+            src="/PIWC/assets/aboute01.jpg"
             alt="Description for image 2"
             layout="fill"
             objectFit="cover"
@@ -30,7 +30,7 @@ const PhotoCollage = () => {
         <div className="h-48 w-48 md:h-96 md:w-96">
           {/**<div className="relative h-48 w-48 md:h-96 md:w-96"> */}
           <Image
-            src="/assets/about02.jpeg"
+            src="/PIWC/assets/about02.jpeg"
             alt="Description for image 3"
             layout="fill"
             objectFit="cover"
@@ -40,7 +40,7 @@ const PhotoCollage = () => {
         <div className="w-full h-64 md:col-span-2">
           {/*<div className="relative w-full h-64 md:col-span-2">*/ }
           <Image
-            src="/assets/etude.jpeg"
+            src="/PIWC/assets/etude.jpeg"
             alt="Description for image 4"
             layout="fill"
             objectFit="cover"
@@ -50,7 +50,7 @@ const PhotoCollage = () => {
         <div className=" w-full h-64 md:col-span-1">
           {/**<div className="relative w-full h-64 md:col-span-1"> */}
           <Image
-           src="/assets/about04.jpg"
+           src="/PIWC/assets/about04.jpg"
             alt="Description for image 5"
             layout="fill"
             objectFit="cover"

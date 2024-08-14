@@ -23,7 +23,8 @@ const Hero = () => {
     <div className="relative md:w-full md:h-screen md:mt-42">
       {width > 400 ?
         <Image
-        src="/assets/hero.jpeg"
+        src="/PIWC/assets/hero.jpeg"
+        //src="../PIWC/assets/hero.jpeg"
         alt="Hero Image"
         fill
         object-fill
@@ -36,7 +37,7 @@ const Hero = () => {
       />
       :
       <Image
-        src="/assets/hero.jpeg"
+        src="/PIWC/assets/hero.jpeg"
         alt="Hero Image"
         width={500}
         height={800}

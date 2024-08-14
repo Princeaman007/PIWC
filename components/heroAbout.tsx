@@ -21,7 +21,7 @@ const HeroAbout = () => {
     <div className="relative md:w-full md:h-screen md:mt-42 border border-2 border-solid border-gray-950">
       {width > 400 ?
         <Image
-        src="/assets/heroeglise.jpg"
+        src="/PIWC/assets/heroeglise.jpg"
         alt="Hero Image"
         fill
         object-fill
@@ -32,7 +32,7 @@ const HeroAbout = () => {
       />
       :
       <Image
-       src="/assets/heroeglise.jpg"
+       src="/PIWC/assets/heroeglise.jpg"
         alt="Hero Image"
         width={500}
         height={800}

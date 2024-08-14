@@ -15,7 +15,7 @@ const CirclePhotoCollage = () => {
                     {/*<div className="absolute top-1/4 left-1/4 w-64 h-64"> */}
                     <div className=" absolute top-1/4 md:top-16 md:left-16 md:right-16 left-44 md:w-64 w-32 md:h-64 h-32">
                     <Image
-                        src="/assets/centre.jpg"// Replace with your image path
+                        src="/PIWC/assets/centre.jpg"// Replace with your image path
                         alt="Central Image"
                         layout="fill"
                         objectFit="cover"
@@ -26,7 +26,7 @@ const CirclePhotoCollage = () => {
                     {/* <div className="absolute top-0 left-1/4 w-32 h-32 transform -translate-x-1/2 -translate-y-1/2">*/}
                     <div className=" absolute top-0 left-36 md:w-32 md:h-32 h-28 w-28 transform -translate-x-1/2 -translate-y-1/2">
                     <Image
-                        src="/assets/verset.jpeg" // Replace with your image path
+                        src="/PIWC/assets/verset.jpeg" // Replace with your image path
                         alt="Top Image"
                         layout="fill"
                         objectFit="cover"
@@ -37,7 +37,7 @@ const CirclePhotoCollage = () => {
                     {/*<div className="absolute bottom-0 left-1/4 w-32 h-32 transform -translate-x-1/2 translate-y-1/2"> */}
                     <div className=" absolute bottom-0 left-40 md:w-32 w-28 h-28 md:h-32 transform -translate-x-1/2 translate-y-1/2">
                     <Image
-                        src="/assets/full.jpg" // Replace with your image path
+                        src="/PIWC/assets/full.jpg" // Replace with your image path
                         alt="Bottom Image"
                         layout="fill"
                         objectFit="cover"
@@ -48,7 +48,7 @@ const CirclePhotoCollage = () => {
                     {/* <div className="absolute top-1/4 left-0 w-40 h-40 transform -translate-x-1/2 -translate-y-1/2"> */}
                     <div className=" absolute top-24 md:left-0 left-32 md:w-40 w-28 md:h-40 h-28 transform -translate-x-1/2 -translate-y-1/2">
                     <Image
-                    src="/assets/elder.jpg" // Replace with your image path
+                    src="/PIWC/assets/elder.jpg" // Replace with your image path
                         alt="Left Image"
                         layout="fill"
                         objectFit="cover"
@@ -59,7 +59,7 @@ const CirclePhotoCollage = () => {
                     {/* <div className="absolute top-1/4 right-0 w-32 h-32 transform translate-x-1/2 -translate-y-1/2">*/}
                     <div className=" absolute top-1/4 md:right-0 right-16 md:w-32 md:h-32 h-28 w-28 transform translate-x-1/2 -translate-y-1/2">
                     <Image
-                        src="/assets/about04.jpg" // Replace with your image path
+                        src="/PIWC/assets/about04.jpg" // Replace with your image path
                         alt="Right Image"
                         layout="fill"
                         objectFit="cover"
@@ -70,7 +70,7 @@ const CirclePhotoCollage = () => {
                      {/* <div className=" absolute top-0 left-0 w-24 h-24 transform -translate-x-1/2 -translate-y-1/2">*/}
                     <div className=" absolute top-0 md:left-0 left-20 md:w-24 md:h-24 h-24 w-24 transform -translate-x-1/2 -translate-y-1/2">
                     <Image
-                        src="/assets/danse01.jpg" // Replace with your image path
+                        src="/PIWC/assets/danse01.jpg" // Replace with your image path
                         alt="Top-Left Image"
                         layout="fill"
                         objectFit="cover"
@@ -81,7 +81,7 @@ const CirclePhotoCollage = () => {
                      {/* <div className="absolute top-0 right-0 w-24 h-24 transform translate-x-1/2 -translate-y-1/2"> */}
                     <div className=" absolute top-0 md:right right-16 md:w-24 md:h-24 h-24 w-24 transform translate-x-1/2 -translate-y-1/2">
                     <Image
-                        src="/assets/jeudi.jpeg" // Replace with your image path
+                        src="/PIWC/assets/jeudi.jpeg" // Replace with your image path
                         alt="Top-Right Image"
                         layout="fill"
                         objectFit="cover"
@@ -93,7 +93,7 @@ const CirclePhotoCollage = () => {
                     {/*<div className="absolute bottom-0 left-0 w-24 h-24 transform -translate-x-1/2 translate-y-1/2"> */}
                     <div className="absolute bottom-0 md:left-0 left-20 md:w-24 md:h-24 h-24 w-24 transform -translate-x-1/2 translate-y-1/2">
                     <Image
-                        src="/assets/elise.jpg" // Replace with your image path
+                        src="/PIWC/assets/elise.jpg" // Replace with your image path
                         alt="Bottom-Left Image"
                         layout="fill"
                         objectFit="cover"
@@ -104,7 +104,7 @@ const CirclePhotoCollage = () => {
                      {/*<div className="absolute bottom-0 right-0 w-48 h-48 transform translate-x-1/2 translate-y-1/2"> */}
                     <div className="absolute bottom-0 md:right-0 right-20 md:w-48 md:h-48 w-32 h-32 transform translate-x-1/2 translate-y-1/2">
                     <Image
-                        src="/assets/danse.jpg"// Replace with your image path
+                        src="/PIWC/assets/danse.jpg"// Replace with your image path
                         alt="Bottom-Right Image"
                         layout="fill"
                         objectFit="cover"

@@ -7,7 +7,7 @@ const Verset = () => {
     <div className="relative w-full h-96">
        {/** <div className="relative w-full h-96 border border-2 border-solid border-gray-950">*/}
       <Image 
-        src="/assets/verset.jpeg" 
+        src="/PIWC/assets/verset.jpeg" 
         alt="Background Image" 
         layout="fill" 
         objectFit="cover" 

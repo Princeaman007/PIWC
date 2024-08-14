@@ -5,7 +5,7 @@ import Image from 'next/image';
 const programs = [
   {
     title: 'Sunday',
-    image: '/assets/pasteur1.jpeg',
+    image: '/PIWC/assets/pasteur1.jpeg',
     description: [
       '1st Worship in English from 10:45 a.m. to 1:00 p.m.',
       '2nd Worship in French 1:30 p.m. to 3:30 p.m.',
@@ -13,7 +13,7 @@ const programs = [
   },
   {
     title: 'Monday',
-    image: '/assets/bible.jpeg',
+    image: '/PIWC/assets/bible.jpeg',
     description: [
       'Monday "Bible School for all"',
       'From 8 p.m. to 9 p.m. (broadcast live)',
@@ -21,7 +21,7 @@ const programs = [
   },
   {
     title: 'THURSDAY',
-    image: '/assets/mardi.jpeg',
+    image: '/PIWC/assets/mardi.jpeg',
     description: [
       'Worship (broadcast live)',
       'From 8 p.m. to 9 p.m.',
