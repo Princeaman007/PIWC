@@ -37,7 +37,6 @@ const Programs = () => {
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
         {programs.map((program, index) => (
           <div key={index} className="flex flex-col items-center pt-2">
-            {/*<div className="w-48 h-48 mb-4 relative">*/}
             <div className=" relative w-48 h-48 mb-4">
               <Image
                 src={program.image}

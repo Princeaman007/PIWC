@@ -5,7 +5,6 @@ import Image from 'next/image';
 const PastorProfile = () => {
   return (
     <div className="flex flex-col  items-center justify-center py-4 shadow-md">
-      {/**  <div className="w-64 h-64 relative mb-4 md:mb-0 md:mr-4">*/}
       <div className=" relative w-64 h-64 mb-4 md:mb-0 md:mr-4">
         <Image
           src="/PIWC/assets/pasteur.jpeg"  // Assurez-vous que l'image est dans le dossier public

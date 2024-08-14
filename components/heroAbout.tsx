@@ -26,9 +26,6 @@ const HeroAbout = () => {
         fill
         object-fill
         className="inset-0 w-full h-full"
-        //className="absolute h-fit"
-        //layout="fill"
-        //className="absolute inset-0 w-full h-full"
       />
       :
       <Image
@@ -36,14 +33,9 @@ const HeroAbout = () => {
         alt="Hero Image"
         width={800}
         height={800}
-        //style={{width: "100%", height: "50%"}}
         objectFit="cover"
-        //className="inset-0 w-full h-full"
-        //className="absolute h-fit"
       />
       }
-      {/**<div className="absolute inset-0 bg-black opacity-50"></div> */}
-      {/** <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">*/}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
         <h1 className="text-4xl text-center md:text-6xl font-bold mb-4 animate__animated animate__fadeInDown">
         CHURCH OF PENTECOST 

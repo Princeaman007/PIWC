@@ -3,8 +3,6 @@ import Image from 'next/image';
 
 const ThemePastoral= () => {
   return (
-    
-    //<div className="relative w-full h-96">
     <div className="w-full h-96">
       <Image 
         src="/PIWC/assets/verset.jpeg" 

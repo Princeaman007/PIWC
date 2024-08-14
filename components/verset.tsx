@@ -5,7 +5,6 @@ const Verset = () => {
   return (
    
     <div className="relative w-full h-96">
-       {/** <div className="relative w-full h-96 border border-2 border-solid border-gray-950">*/}
       <Image 
         src="/PIWC/assets/verset.jpeg" 
         alt="Background Image" 

@@ -8,10 +8,10 @@ const useWidth = () => {
   const [width, setWidth] = useState(0)
   const handleResize = () => setWidth(window.innerWidth)
   useEffect(() => {
-      handleResize()
-      window.addEventListener('resize', handleResize)
-      return () => window.removeEventListener('resize', handleResize)
-      // eslint-disable-next-line react-hooks/exhaustive-deps
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   return width
 }
@@ -23,34 +23,24 @@ const Hero = () => {
     <div className="relative md:w-full md:h-screen md:mt-42">
       {width > 799 ?
         <Image
-        src="/PIWC/assets/hero.jpeg"
-        //src="../PIWC/assets/hero.jpeg"
-        alt="Hero Image"
-        fill
-        object-fill
-        //width={500}
-        //height={800}
-        //style={{width: "100%", height: "50%"}}
-        //objectFit="cover"
-        className="inset-0 w-full h-full"
-        //className="absolute h-fit"
-      />
-      :
-      <Image
-        src="/PIWC/assets/hero.jpeg"
-        alt="Hero Image"
-        width={800}
-        height={800}
-        //style={{width: "100%", height: "50%"}}
-        objectFit="cover"
-        //fill
-        //className="inset-0 w-full h-full"
-        //className="absolute h-fit"
-      />
-      }
-      {/*<div className="absolute inset-0 bg-black opacity-50"></div>*/}
+          src="/PIWC/assets/hero.jpeg"
+          alt="Hero Image"
+          fill
+          object-fill
+          className="inset-0 w-full h-full"
 
-       {/*div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">*/}
+        />
+        :
+        <Image
+          src="/PIWC/assets/hero.jpeg"
+          alt="Hero Image"
+          width={800}
+          height={800}
+          objectFit="cover"
+
+        />
+      }
+
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 animate__animated animate__fadeInDown">
           Welcome To PIWC BRUSSELS
