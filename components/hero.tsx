@@ -21,7 +21,7 @@ const Hero = () => {
   console.log(width);
   return (
     <div className="relative md:w-full md:h-screen md:mt-42">
-      {width > 400 ?
+      {width > 799 ?
         <Image
         src="/PIWC/assets/hero.jpeg"
         //src="../PIWC/assets/hero.jpeg"
@@ -39,10 +39,11 @@ const Hero = () => {
       <Image
         src="/PIWC/assets/hero.jpeg"
         alt="Hero Image"
-        width={500}
+        width={800}
         height={800}
         //style={{width: "100%", height: "50%"}}
         objectFit="cover"
+        //fill
         //className="inset-0 w-full h-full"
         //className="absolute h-fit"
       />

@@ -19,7 +19,7 @@ const HeroAbout = () => {
   const width = useWidth();
   return (
     <div className="relative md:w-full md:h-screen md:mt-42 border border-2 border-solid border-gray-950">
-      {width > 400 ?
+      {width > 799 ?
         <Image
         src="/PIWC/assets/heroeglise.jpg"
         alt="Hero Image"
@@ -34,7 +34,7 @@ const HeroAbout = () => {
       <Image
        src="/PIWC/assets/heroeglise.jpg"
         alt="Hero Image"
-        width={500}
+        width={800}
         height={800}
         //style={{width: "100%", height: "50%"}}
         objectFit="cover"
