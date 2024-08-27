@@ -49,13 +49,13 @@ import {
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
           <DropdownMenuItem onClick={() => router.push('/')}>
-          <span>Accueil</span>
+          <span>Home</span>
           </DropdownMenuItem>
             <DropdownMenuItem onClick={() => router.push('/leglise')}>
-              <span>Vie de l église</span>
+              <span>Church</span>
             </DropdownMenuItem >
             <DropdownMenuItem onClick={() => router.push('/enligne')}>
-              <span>En Ligne</span>
+              <span>Online</span>
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => router.push('/contact')}>
               <span>Contact</span>
